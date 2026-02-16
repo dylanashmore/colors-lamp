@@ -1,84 +1,35 @@
-\# COLORS (LAMP Stack)
+# COLORS Application
 
+## Description
 
+The COLORS application is a full-stack web application that allows users to register, log in, add colors to their personal list, and search their saved colors. The application is built using a LAMP stack hosted on DigitalOcean. The frontend communicates with PHP API endpoints, which interact with a MySQL database to store and retrieve user-specific data. This project demonstrates full-stack deployment, database integration, and API development.
 
-COLORS is a web application built using the LAMP stack.
+## Technologies Used
 
-The application allows users to manage a collection of colors through a web interface.
+Linux (Ubuntu Server), Apache, MySQL, PHP, HTML, CSS, JavaScript, DigitalOcean, Domain registrar, Postman, FileZilla.
 
-The frontend communicates with PHP API endpoints that interact with a MySQL database.
+## Setup Instructions
 
+1. Server Setup: Create a LAMP droplet on DigitalOcean (Ubuntu, Basic plan). SSH into the server, verify Apache is running, and navigate to /var/www/html.
+2. Configure Domain: Purchase a domain and update the DNS A record to point to the droplet IP address. Wait for DNS propagation.
+3. Database Setup: Log into MySQL. Create database COP4331. Create the Users, Colors, and Contacts tables. Insert sample data. Create a database user with appropriate privileges. Update database credentials inside the PHP files.
+4. Backend Setup: Upload Login.php, AddColor.php, and SearchColors.php to /var/www/html/LAMPAPI and ensure database credentials are correct.
+5. Frontend Setup: Upload index.html, color.html, and the css, js, and images directories into /var/www/html.
 
+## Running & Accessing
 
-\## Technologies Used
+Open a web browser and navigate to http://yourdomain.com. Log in with an existing user account. After logging in, you can add new colors and search saved colors.
 
-\- Linux
+API endpoints can be tested using Postman:
+POST /LAMPAPI/Login.php
+POST /LAMPAPI/AddColor.php
+POST /LAMPAPI/SearchColors.php
+Header required: Content-Type: application/json
 
-\- Apache
+## Assumptions, Limitations, and AI Usage
 
-\- MySQL
+Assumptions: The LAMP stack is properly installed, DNS propagation has completed, and database credentials are correctly configured in the PHP files.
 
-\- PHP
+Limitations: Passwords are hashed using MD5
 
-\- HTML
-
-\- CSS
-
-\- JavaScript
-
-
-
-\## Project Structure
-
-colors-lamp/
-
-  api/        - PHP API endpoints
-
-  public/     - Frontend files
-
-    css/
-
-    js/
-
-    images/
-
-    index.html
-
-
-
-\## Setup Instructions
-
-1\. Install a LAMP environment.
-
-2\. Create the required MySQL database and tables.
-
-3\. Place the project inside the Apache web root directory.
-
-4\. Access the app at:
-
-   http://localhost/colors-lamp/public/
-
-
-
-\## Notes
-
-\- Database credentials are not included in this repository.
-
-\- This project was completed as part of a lab assignment.
-
-
-
-
-
-\## API Endpoints
-
-\- POST /api/Login.php
-
-\- POST /api/AddColor.php
-
-\- POST /api/SearchColors.php
-
-
-
-Last Update: Feb 2026
-
+AI Usage: AI was used in assistance with writing this README, as well as debugging and helping with Git commands.
