@@ -2,7 +2,7 @@
 
 
 
-COLORS is a web application built using the LAMP stack. 
+COLORS is a web application built using the LAMP stack.
 
 The application allows users to manage a collection of colors through a web interface.
 
@@ -32,17 +32,17 @@ The frontend communicates with PHP API endpoints that interact with a MySQL data
 
 colors-lamp/
 
-&nbsp; api/        - PHP API endpoints
+  api/        - PHP API endpoints
 
-&nbsp; public/     - Frontend files
+  public/     - Frontend files
 
-&nbsp;   css/
+    css/
 
-&nbsp;   js/
+    js/
 
-&nbsp;   images/
+    images/
 
-&nbsp;   index.html
+    index.html
 
 
 
@@ -56,7 +56,7 @@ colors-lamp/
 
 4\. Access the app at:
 
-&nbsp;  http://localhost/colors-lamp/public/
+   http://localhost/colors-lamp/public/
 
 
 
@@ -65,6 +65,22 @@ colors-lamp/
 \- Database credentials are not included in this repository.
 
 \- This project was completed as part of a lab assignment.
+
+
+
+
+
+\## API Endpoints
+
+\- POST /api/Login.php
+
+\- POST /api/AddColor.php
+
+\- POST /api/SearchColors.php
+
+
+
+
 
 
 
