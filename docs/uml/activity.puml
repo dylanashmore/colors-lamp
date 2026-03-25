@@ -1,0 +1,39 @@
+@startuml
+
+start
+
+:User opens COLORS web app;
+
+:Enter login credentials;
+:Send login request;
+
+if (Credentials valid?) then (Yes)
+
+  :Display Home Page;
+
+  if (Add Color selected?) then (Yes)
+
+    :Enter color name;
+    :Send AddColor request;
+    :Store color in database;
+    :Display success message;
+
+  else (Search Colors)
+
+    :Enter search text;
+    :Send SearchColors request;
+    :Query database;
+    :Return matching colors;
+    :Display results;
+
+  endif
+
+else (No)
+
+  :Display login error;
+
+endif
+
+stop
+
+@enduml

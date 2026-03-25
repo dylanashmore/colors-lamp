@@ -1,0 +1,45 @@
+@startuml
+
+class User {
+  ID : int
+  FirstName : string
+  LastName : string
+  Login : string
+  Password : string
+}
+
+class Color {
+  ID : int
+  Name : string
+  UserID : int
+}
+
+class LoginAPI {
+  +login(jsonRequest : string) : string
+}
+
+class AddColorAPI {
+  +addColor(jsonRequest : string) : string
+}
+
+class SearchColorsAPI {
+  +searchColors(jsonRequest : string) : string
+}
+
+class Database {
+  +connect()
+  +findUser(login : string, password : string) : User
+  +insertColor(name : string, userId : int)
+  +searchColors(search : string, userId : int) : Color[]
+}
+
+LoginAPI --> Database
+AddColorAPI --> Database
+SearchColorsAPI --> Database
+
+Database --> User
+Database --> Color
+
+User "1" --> "0..*" Color : owns
+
+@enduml
