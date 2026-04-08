@@ -1,4 +1,4 @@
-body 
+body
 {
     background-color: #707070;
 }
@@ -49,7 +49,8 @@ body
     font-family: 'Ubuntu', sans-serif;
 }
 
-.buttons:hover{
+.buttons:hover
+{
     background-color: #00d5124f;
     color: #FFFFFF;
     opacity: 50%;
@@ -57,22 +58,27 @@ body
 
 #loginName
 {
-	font-size: 30px;
-}
-#loginPassword
-{
-	font-size: 30px;
-}
-#searchText
-{
-	font-size: 30px;
-}
-#colorText
-{
-	font-size: 30px;
+    font-size: 30px;
 }
 
-input[type="text"],input[type="password"]{
+#loginPassword
+{
+    font-size: 30px;
+}
+
+#searchText
+{
+    font-size: 30px;
+}
+
+#colorText
+{
+    font-size: 30px;
+}
+
+input[type="text"],
+input[type="password"]
+{
     border-radius: 25px;
     text-align: center;
     width: 80%;
@@ -81,7 +87,8 @@ input[type="text"],input[type="password"]{
     font-family: 'Ubuntu', sans-serif;
 }
 
-#inner-title{
+#inner-title
+{
     display: inline-block;
     font-size: 0.8em;
     width: 90%;
@@ -92,7 +99,8 @@ input[type="text"],input[type="password"]{
     color: #95060a;
 }
 
-#loginResult{
+#loginResult
+{
     display: inline-block;
     font-size: 0.8em;
     width: 90%;
@@ -103,19 +111,22 @@ input[type="text"],input[type="password"]{
     color: #95060a;
 }
 
-#userName{
+#userName
+{
     display: inline-block;
     width: 80%;
     margin-left: 10%;
     text-align: center;
 }
 
-#logoutButton{
+#logoutButton
+{
     width: 20%;
     margin-left: 40%;
 }
 
-select{
+select
+{
     width: 30%;
     margin-left: 35%;
     margin-top: 2%;
@@ -123,11 +134,13 @@ select{
     font-family: 'Ubuntu', sans-serif;
 }
 
-#colorSearchResult{
+#colorSearchResult
+{
     display: none;
 }
 
-#colorAddResult{
+#colorAddResult
+{
     display: inline-block;
     font-size: 0.8em;
     width: 90%;
